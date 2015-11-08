@@ -35,7 +35,7 @@ class PageProviderTest extends AbstractTestCase {
 			->get('FluidTYPO3\\Fluidpages\\Provider\\PageProvider');
 		$this->assertAttributeInstanceOf('TYPO3\\CMS\\Core\\Configuration\\FlexForm\\FlexFormTools', 'flexformTool', $instance);
 		$this->assertAttributeInstanceOf('FluidTYPO3\\Fluidpages\\Service\\PageService', 'pageService', $instance);
-		$this->assertAttributeInstanceOf('FluidTYPO3\\Fluidpages\\Service\\ConfigurationService', 'configurationService', $instance);
+		$this->assertAttributeInstanceOf('FluidTYPO3\\Flux\\Service\\FluxService', 'configurationService', $instance);
 	}
 
 	public function testGetExtensionKey() {
